@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="Cenario" onKeyPressed="#evtClick" prefHeight="452.0" prefWidth="515.0" style="-fx-background-image: url('grama.png');" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="javafxapplication3.FXMLDocumentController">
+    <children>
+        <Button fx:id="Boneco" layoutX="233.0" layoutY="226.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-image: url('kenny.png'); -fx-background-position: center; -fx-background-color: transparent;" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+    </children>
+</AnchorPane>
