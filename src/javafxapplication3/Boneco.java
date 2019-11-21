@@ -16,6 +16,7 @@ import java.io.PrintWriter;
 public class Boneco 
 {
     private String dir;
+    private int x, y;
     private FileWriter arq;
     private PrintWriter gravaArq;
     
@@ -24,6 +25,12 @@ public class Boneco
         dir = "";
         arq = new FileWriter(logLocal);
         gravaArq= new PrintWriter(arq);
+        x = y = 0;
+    }
+    
+    public String getDirection()
+    {
+        return dir;
     }
     
     public void andaCima()
@@ -48,5 +55,22 @@ public class Boneco
     {
         dir = "Esquerda";
         System.out.println(dir);
+    }
+    
+    public void setX(int x)
+    {
+        this.x = x;
+    }
+    
+    public void setY(int y)
+    {
+        this.y = y;
+    }
+    
+    public void gravaLog()
+    {
+        String s = "X: " + x + "Y: " + y + "Direction: " + dir;
+        gravaArq.printf(s);
+        System.out.println(s);
     }
 }

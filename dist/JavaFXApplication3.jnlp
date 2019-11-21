@@ -11,12 +11,8 @@
   </resources>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="JavaFXApplication3.jar" size="663467" download="eager" />
-    <jar href="lib/aspectj-1.8.5.jar" size="15157127" download="eager" />
+    <jar href="JavaFXApplication3.jar" size="664010" download="eager" />
     <jar href="lib/aspectjrt.jar" size="117529" download="eager" />
-    <jar href="lib/aspectjtools.jar" size="11166831" download="eager" />
-    <jar href="lib/aspectjweaver.jar" size="1863302" download="eager" />
-    <jar href="lib/org.aspectj.matcher.jar" size="826413" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="JavaFXApplication3" >
     <param name="requiredFXVersion" value="2.2+"/>
