@@ -20,10 +20,10 @@ public class Boneco
     private FileWriter arq;
     private PrintWriter gravaArq;
     
-    public Boneco(String logLocal)throws IOException
+    public Boneco()throws IOException
     {
         dir = "";
-        arq = new FileWriter(logLocal);
+        arq = new FileWriter("logPos.txt");
         gravaArq= new PrintWriter(arq);
         x = y = 0;
     }
@@ -67,10 +67,20 @@ public class Boneco
         this.y = y;
     }
     
-    public void gravaLog()
+    public int getX()
     {
-        String s = "X: " + x + "Y: " + y + "Direction: " + dir;
-        gravaArq.printf(s);
-        System.out.println(s);
+        return x;
+    }
+    
+    public int getY()
+    {
+        return y;
+    }
+    
+    public boolean gravaLog()
+    {
+        gravaArq.printf("Dir: " + dir);
+        System.out.println("Dir: " + dir);
+        return true;
     }
 }
